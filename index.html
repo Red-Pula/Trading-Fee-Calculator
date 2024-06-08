@@ -1,0 +1,124 @@
+<!-- 
+A simple calculator app for computing trading fees.
+Copyright (C) 2024 Rafael Red Angelo M. Hizon
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading Fee Calculator</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card-header text-center">
+          <h2>Trading Fee Calculator</h2>
+          <p class="form-subtitle">&copy 2024 Red Hizon</p>
+        </div>
+        <div class="card-body">
+          <!-- Margin -->
+          <form id="mainForm">
+            <div class="form-group">
+              <label for="marginField">Margin ($)</label>
+              <input
+                type="number"
+                step="0.01"
+                class="form-control"
+                id="marginField"
+                placeholder="Enter margin"
+                required
+              />
+            </div>
+            <!-- Leverage -->
+            <div class="form-group">
+              <label for="leverageField">Leverage</label>
+              <input
+                type="number"
+                step="0.01"
+                class="form-control"
+                id="leverageField"
+                placeholder="Enter leverage"
+                required
+              />
+            </div>
+            <!-- Trading fee -->
+            <div class="form-group">
+              <label for="rateField">Trading Fee (%)</label>
+              <input
+                type="number"
+                step="0.0001"
+                value="0.045"
+                class="form-control"
+                id="rateField"
+                placeholder="Enter trading fee percentage"
+                required
+              />
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-block">
+              Calculate
+            </button>
+          </form>
+          <div class="mt-4">
+            <h5>Results:</h5>
+            <p id="result"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer social-icons">
+      <a
+        href="https://www.linkedin.com/in/rafael-red-angelo-hizon"
+        target="_blank"
+        rel="author"
+      >
+        <i class="fab fa-linkedin fa-lg"></i>
+      </a>
+      <a href="https://github.com/Red-Pula" target="_blank" rel="author">
+        <i class="fab fa-github fa-lg"></i>
+      </a>
+      <a href="https://www.facebook.com/redhizon" target="_blank" rel="author">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
