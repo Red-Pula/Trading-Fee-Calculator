@@ -1,6 +1,8 @@
 # Trading Fee Calculator
 
-Trading platforms often fail to display the actual profit or loss of an open trade after accounting for trading fees. As a result, traders may adjust their stop-loss orders to price levels they believe are breakeven or profitable, only to find they've incurred a loss due to unaccounted fees. This is a common pitfall, especially for beginners. I originally created this simple application just to streamline my trading process, eliminating the need to manually calculate trading fees with a calculator. Now, I am putting this on _Github_ in hopes of helping others in their trading journeys with this humble project.
+Trading platforms often fail to display the actual profit or loss of an open trade after accounting for the trading fee. As a result, traders may adjust their stop-loss orders to price levels they believe are breakeven or profitable, only to find they've incurred a loss due to unaccounted fees. While most exchanges show the computed trading fee on their UI, some traders still overlook them. This is a common pitfall, especially for beginners. Additionally, some exchanges might not show the trading fee until the trade is opened. 
+
+To address this issue, I created a simple application that calculates estimated trading fees ahead of time, streamlining the trading process and eliminating the need for manual calculations. Now, I am putting this project on GitHub in hopes of helping others in their trading journeys.
 
 ## The Formula
 
